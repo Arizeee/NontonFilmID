@@ -8,7 +8,7 @@ class Pager extends BaseConfig
 {
     /**
      * --------------------------------------------------------------------------
-     * Templates
+     * layouts
      * --------------------------------------------------------------------------
      *
      * Pagination links are rendered out using views to configure their
