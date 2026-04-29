@@ -28,12 +28,12 @@
             <div class="nav-item" onclick="setActiveNav(this)">
                 <i class="fa-solid fa-clapperboard"></i>
                 <span>Film</span>
-                <span class="nav-badge" style="background:var(--accent);">12</span>
+                <!-- <span class="nav-badge" style="background:var(--accent);">12</span> -->
             </div>
             <div class="nav-item" onclick="setActiveNav(this)">
                 <i class="fa-solid fa-ticket"></i>
                 <span>Pesanan</span>
-                <span class="nav-badge" style="background:var(--rose);">4</span>
+                <!-- <span class="nav-badge" style="background:var(--rose);">4</span> -->
             </div>
             <div class="nav-item" onclick="setActiveNav(this)">
                 <i class="fa-solid fa-door-open"></i>
@@ -45,7 +45,7 @@
             </div>
             <div class="nav-item" onclick="setActiveNav(this)">
                 <i class="fa-solid fa-users"></i>
-                <span>Penonton</span>
+                <span>Pelanggan</span>
             </div>
 
             <div class="sidebar-label" style="padding-top:20px;">Manajemen</div>
@@ -71,8 +71,8 @@
             <div class="sidebar-user">
                 <img src="https://picsum.photos/seed/cinemax-user/80/80.jpg" alt="Avatar" style="width:36px;height:36px;border-radius:10px;object-fit:cover;border:2px solid var(--border);">
                 <div style="flex:1;min-width:0;">
-                    <div style="font-size:13px;font-weight:600;color:var(--fg);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Rizky Pratama</div>
-                    <div style="font-size:11px;color:var(--fg-muted);">Box Office Manager</div>
+                    <div style="font-size:13px;font-weight:600;color:var(--fg);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Admin</div>
+                    <div style="font-size:11px;color:var(--fg-muted);">Cinemax Manager</div>
                 </div>
                 <i class="fa-solid fa-ellipsis-vertical" style="color:var(--fg-dim);font-size:13px;"></i>
             </div>

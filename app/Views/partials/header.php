@@ -5,11 +5,11 @@
         </button>
     </div>
     <div style="display:flex;align-items:center;gap:12px;">
+        <!-- <div style="width:1px;height:24px;background:var(--border);"></div> -->
+        <span style="font-size:12px;color:var(--fg-muted);" id="currentDate"></span>
         <div style="position:relative;">
             <i class="fa-solid fa-bell" style="font-size:16px;color:var(--fg-muted);cursor:pointer;transition:color 0.2s;" onmouseover="this.style.color='var(--fg)'" onmouseout="this.style.color='var(--fg-muted)'"></i>
             <div style="position:absolute;top:-4px;right:-4px;width:8px;height:8px;background:var(--rose);border-radius:50%;border:2px solid var(--bg);"></div>
         </div>
-        <div style="width:1px;height:24px;background:var(--border);"></div>
-        <span style="font-size:12px;color:var(--fg-muted);" id="currentDate"></span>
     </div>
 </header>

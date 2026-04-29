@@ -1,4 +1,5 @@
-// Toggle sidebar
+/*  SIDEBAR  */
+
 function toggleSidebar() {
     var s = document.getElementById('sidebar');
     var m = document.getElementById('mainContent');
@@ -12,7 +13,6 @@ function toggleSidebar() {
     }
 }
 
-// Navigasi 
 function setActiveNav(el) {
     document.querySelectorAll('.nav-item').forEach(function (n) {
         n.classList.remove('active');
@@ -23,21 +23,8 @@ function setActiveNav(el) {
     showToast('Navigasi ke: ' + label, 'var(--accent)');
 }
 
+/*  TOAST  */
 
-// Prioritas selector
-var selectedPriorityBtn = null;
-
-function selectPriority(btn) {
-    document.querySelectorAll('.priority-btn').forEach(function (b) {
-        b.style.borderColor = 'var(--border)';
-        b.style.borderWidth = '1px';
-    });
-    btn.style.borderColor = btn.getAttribute('data-color');
-    btn.style.borderWidth = '2px';
-    selectedPriorityBtn = btn;
-}
-
-// Toast — posisi atas kanan
 var toastTimeout;
 
 function showToast(msg, color) {
@@ -51,7 +38,7 @@ function showToast(msg, color) {
     }, 3000);
 }
 
-// Tanggal & greeting
+/*  DATE & GREETING  */
 function updateDate() {
     var now = new Date();
     var opts = {
@@ -72,27 +59,20 @@ function updateDate() {
     document.getElementById('greetingText').innerHTML = g + ', <span style="color:var(--accent);">Admin</span>';
 }
 
-// Responsif stat grid
+/*  RESPONSIVE  */
+
 function handleResize() {
     document.getElementById('statsGrid').style.gridTemplateColumns =
         window.innerWidth < 768 ? 'repeat(2,1fr)' : 'repeat(4,1fr)';
 }
 
-// Keyboard
-document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeAddTaskModal();
-});
 
-document.getElementById('newTaskName').addEventListener('keydown', function (e) {
-    if (e.key === 'Enter') addNewTask();
-});
-
-// Init
 updateDate();
 handleResize();
 window.addEventListener('resize', handleResize);
+initSeats();
 
-// Animasi progress bar saat load
+// Progress bar animation on load
 setTimeout(function () {
     document.querySelectorAll('.progress-fill').forEach(function (el) {
         var w = el.style.width;
